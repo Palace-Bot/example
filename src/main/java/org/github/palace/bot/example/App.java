@@ -1,12 +1,14 @@
 package org.github.palace.bot.example;
 
 
+import org.github.palace.bot.core.annotation.Application;
 import org.github.palace.bot.core.plugin.Plugin;
 
 /**
  * @author jihongyuan
  * @date 2022/5/25 11:01
  */
+@Application(scanBasePackages = "classpath*:org/github/palace/bot/example/**/**.class")
 public class App extends Plugin {
 
     public App() {
